@@ -27,23 +27,37 @@
 
 // createBooking('LH123', undefined, 100);
 
-const flight = 'LH234';
-const details = {
-  name: 'Iqbal Erani',
-  passport: 21315162165,
+// const flight = 'LH234';
+// const details = {
+//   name: 'Iqbal Erani',
+//   passport: 21315162165,
+// };
+
+// const checkIn = function (flightNum, passenger) {
+//   flightNum = 'LH999';
+//   passenger.name = 'Mr. ' + passenger.name;
+
+//   if (passenger.passport === 21315162165) {
+//     alert('Checked in');
+//   } else {
+//     alert('Wrong Passport');
+//   }
+// };
+
+// checkIn(flight, details);
+// console.log(flight);
+// console.log(details);
+
+//Call Method
+//Apply Method
+//Bind Method
+
+//IIFE
+const runOnce = function () {
+  console.log('This will run once only');
 };
+runOnce();
 
-const checkIn = function (flightNum, passenger) {
-  flightNum = 'LH999';
-  passenger.name = 'Mr. ' + passenger.name;
-
-  if (passenger.passport === 21315162165) {
-    alert('Checked in');
-  } else {
-    alert('Wrong Passport');
-  }
-};
-
-checkIn(flight, details);
-console.log(flight);
-console.log(details);
+(function () {
+  console.log('This will run once only');
+})();
